@@ -15,6 +15,9 @@ public class BITMiniCC {
 	 */
 	public static void main(String[] args) throws IOException, ParserConfigurationException, SAXException {
 		//System.out.println(System.getProperty("user.dir"));
+		/*
+		 * ต๗สิฃบ
+		 * 
 		if(args.length < 1){
 			usage();
 			return;
@@ -24,6 +27,8 @@ public class BITMiniCC {
 			System.out.println("Incorrect input file:" + file);
 			return;
 		}
+		*/
+		String file = "D:/code/complier/input/test.c";
 //		System.out.println(file);
 		MiniCCompiler cc = new MiniCCompiler();
 		System.out.println("Start to compile ...");

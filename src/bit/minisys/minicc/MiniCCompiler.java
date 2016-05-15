@@ -17,7 +17,9 @@ import bit.minisys.minicc.optimizer.MiniCCOptimizer;
 import bit.minisys.minicc.scanner.MiniCCScanner;
 import bit.minisys.minicc.semantic.MiniCCSemantic;
 import bit.minisys.minicc.parser.MiniCCParser;
+import bit.minisys.minicc.pp.IMiniCCPreProcessor;
 import bit.minisys.minicc.pp.MiniCCPreProcessor;
+import bit.minisys.minicc.pp.PreProcessor;
 //import bit.minisys.minicc.scanner.MiniCCScannerInternal;
 import bit.minisys.minicc.simulator.MIPSSimulator;
 
@@ -91,7 +93,7 @@ public class MiniCCompiler {
 		
 		// step 1: preprocess
 		String ppOutFile = cFile.replace(MiniCCCfg.MINICC_PP_INPUT_EXT, MiniCCCfg.MINICC_PP_OUTPUT_EXT);
-		MiniCCPreProcessor prep = new MiniCCPreProcessor();
+		IMiniCCPreProcessor prep = new PreProcessor();
 		if(pp.skip.equals("false")){
 			if(pp.type.equals("java")){
 				prep.run(cFile, ppOutFile);
