@@ -4,9 +4,9 @@
     对输入的源程序进行预处理，实现讲空白符和注释去掉
 ## 2.实现效果
 处理前的示例：
-![](source\PreProcesser\1.png)
+![](1.png)
 处理后的示例：
-![](source\PreProcesser\2.png))
+![](2.png))
 
 ## 3.代码说明
 
@@ -19,7 +19,7 @@ IO:使用字符输出流Reader，Writer 对文件实现读写
 空白，tab，以及回车符。注释分别判断"//" 和"/**/"
 
 程序流程
-![](source\PreProcesser\3.png))
+![](3.png)
 
 ## 源代码
 ```java

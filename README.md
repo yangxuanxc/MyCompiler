@@ -23,7 +23,7 @@
 
 ## 框架介绍 
 
-![框架](/source/BITMiniCC.pdf)
+[框架](/source/BITMiniCC.pdf)
 ## 实现过程
 
-(1).[预处理](/source/ProProcesser.md)
+(1).[预处理](/source/ProProcesser/ProProcesser.md)
