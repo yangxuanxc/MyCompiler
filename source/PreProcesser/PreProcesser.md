@@ -1,15 +1,30 @@
-package bit.minisys.minicc.pp;
+# 预处理器
 
-import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Reader;
-import java.io.Writer;
+## 1.说明
+    对输入的源程序进行预处理，实现讲空白符和注释去掉
+## 2.实现效果
+处理前的示例：
+![](source\PreProcesser\1.png)
+处理后的示例：
+![](source\PreProcesser\2.png))
 
+## 3.代码说明
+
+在包pp下创建包 建立类：''PreProcessor'' 实现了接口"IMiniCCPreProcessor"
+
+IO:使用字符输出流Reader，Writer 对文件实现读写
+
+将文件中的内容存在字符数组 char[] 中进行保存，逐个字符进行处理，判断三类空白字符
+
+空白，tab，以及回车符。注释分别判断"//" 和"/**/"
+
+程序流程
+![](source\PreProcesser\3.png))
+
+## 源代码
+```java
 public class PreProcessor implements IMiniCCPreProcessor {
-	File inFile;
+    File inFile;
 	File outFile;
 	Reader inFileReader;
 	Writer outFileWriter;
@@ -146,3 +161,5 @@ public class PreProcessor implements IMiniCCPreProcessor {
 	}
 
 }
+
+```

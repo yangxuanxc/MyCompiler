@@ -23,9 +23,7 @@
 
 ## 框架介绍 
 
-[框架](/source/BITMiniCC.pdf)
-![架构](/source/streampic.png)
-
+![框架](/source/BITMiniCC.pdf)
 ## 实现过程
 
-(1).词法分析
+(1).[预处理](/source/ProProcesser.md)
