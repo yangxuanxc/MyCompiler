@@ -1,20 +1,138 @@
 # 预处理器
 
 ## 1.说明
-    对输入的源程序进行预处理，实现讲空白符和注释去掉
+    对输入的源程序进行预处理，实现将空白符和注释去掉
 ## 2.实现效果
+### 给出一段c语言代码，其中有错误和正确的词法。
+### 处理前的示例：
+```c
+int main(int a,                      int b){    //1120131802 杨旋
+	/*这是一个多行的注释
+	 *
+	 *
+	 * */int          m = 5;
+						//   这是一个单行的注释
 
-处理前的示例：
+	 /********/
+    return    a     +    b;
+}
 
-![](1.png)
+struct jiegou{//这是一个结构体
+	int struct_son;
+}
+//在这个函数中进行测试
+void test(int m){
+	char char1 = 'b'; //测试字符
+	char char2 = '\'';//测试转义字符
+	string _kk = "aaaaaaaaa";//测试字符串
+	string _kk1 = "5555\"\b\n";//测试带有转义字符的字符串
 
-处理后的示例：
+	int int_8 = 0222;//测试八进制整数
+	float float_8 = 05.77;//测试八进制整数 或者05e4
+	float float_10 = -10.22;//测试10进制浮点数
+	float int_16 = 0x11af;//测试16进制整数
+	double science_num = 11e2;//测试科学计数法
+	long long_int = 1155L;
+	//测试符号
+	int a,b,c;
+	c=a+b;
+	c++;
+	c+=b;
+	c=a-b;
+	c-=b;
+	c--
+	c = c*1;
+	c*=a;
+	c = a%b;
+	c = a/b;
+	c = a>b;
+	c = a>>2;
+	c = a&b;
+	struct S;
+	S.struct_son//测试结构
+	//测试输出
+	printf("zhende%d\n",m);
+	return m;
+}
 
-![](2.png)
+void test_wrong(){
+
+	string haha = "xxxxx
+			xx";
+	char b = 'dddd';
+
+
+
+}
+
+```
+### 处理后的示例：
+
+```c
+int main(int a, int b){    
+
+
+
+int m = 5;
+
+
+
+return a + b;
+}
+
+struct jiegou{
+int struct_son;
+}
+
+void test(int m){
+char char1 = 'b'; 
+char char2 = '\'';
+string _kk = "aaaaaaaaa";
+string _kk1 = "5555\"\b\n";
+
+int int_8 = 0222;
+float float_8 = 05.77;
+float float_10 = -10.22;
+float int_16 = 0x11af;
+double science_num = 11e2;
+long long_int = 1155L;
+
+int a,b,c;
+c=a+b;
+c++;
+c+=b;
+c=a-b;
+c-=b;
+c--
+c = c*1;
+c*=a;
+c = a%b;
+c = a/b;
+c = a>b;
+c = a>>2;
+c = a&b;
+struct S;
+S.struct_son
+
+printf("zhende%d\n",m);
+return m;
+}
+
+void test_wrong(){
+
+string haha = "xxxxx
+xx";
+char b = 'dddd';
+
+
+
+}
+
+```
 
 ## 3.代码说明
 
-在包pp下创建包 建立类：''PreProcessor'' 实现了接口"IMiniCCPreProcessor"
+在包pp下创建包 建立类：''PreProcessor''
 
 IO:使用字符输出流Reader，Writer 对文件实现读写
 
@@ -23,149 +141,8 @@ IO:使用字符输出流Reader，Writer 对文件实现读写
 空白，tab，以及回车符。注释分别判断"//" 和"/**/"
 
 程序流程
-
-![](3.png)
-
+![](source\PreProcesser\3.png))
 
 ## 源代码
-```java
-public class PreProcessor implements IMiniCCPreProcessor {
-    File inFile;
-	File outFile;
-	Reader inFileReader;
-	Writer outFileWriter;
-	// numInFile 统计输入文件中的字符的个数
-	int numInFile;
-	// 获得字符的数组
-	char buffer[] = new char[20000];
-	// 数组的下标
-	int i = 0;
-	//遇到换行的特殊处理
-	int if_can_solve = 0;
-	//行首的空格处理。
-	int if_line_statr = 0;
-	String Out = new String();
 
-	@Override
-	public void run(String iFile, String oFile) {
-		// TODO Auto-generated method stub
-		// 将输入文件用File 类表示
-		inFile = new File(iFile);
-		outFile = new File(oFile);
-		// 初始化字符流 类
-		try {
-			inFileReader = new FileReader(inFile);
-			outFileWriter = new FileWriter(outFile);
-			numInFile = inFileReader.read(buffer);
-			preprocess();
-			outFileWriter.write(Out);
-			outFileWriter.close();
-			inFileReader.close();
-		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		} catch (IOException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-	}
-
-	// 预处理开始
-	void preprocess() {
-
-		while (true) {
-			if_can_solve = 0;
-			if (i >= numInFile) {
-				break;
-			}
-			// 如果是空格,tab或者回车
-			if (buffer[i] == ' ' || buffer[i] == '\t' || buffer[i] == '\r') {
-				skip_white_space();
-			} else if (buffer[i] == '/') {
-				//非空格
-				if_line_statr=0;
-				// 查看下一个字符是不是注释的开始符号
-				if (buffer[i + 1] == '*') {
-					i++;// 是注释/*的开始部分
-					parse_comment();
-				}
-				if (buffer[i + 1] == '/') {
-					i++;// 是//注释
-					// 当遇到回车，换行失效
-					while (true) {
-						i++;
-						if (buffer[i] == '\r') {
-							i++;
-							if (buffer[i] == '\n') {
-								if_can_solve=1;
-								if_line_statr=1;
-							}
-							break;
-						}
-					}
-				}
-			}
-
-			if(if_can_solve!=1){
-				if ((buffer[i] == ' ' || buffer[i] == '\t' 
-						|| buffer[i] == '\r')&&if_line_statr==1) {
-					//如果是空格，并且是开头
-				}else{
-					// 将处理后的字符存储
-					Out += buffer[i];
-					if_line_statr=0;
-				}
-			}
-
-			i++;
-		}
-	}
-
-	/*
-	 * 删除注释
-	 */
-	void parse_comment() {
-		i++;
-		while (true) {
-			if (i >= numInFile) {
-				break;
-			}
-			// 注释完毕
-			if (buffer[i] == '*' && buffer[i + 1] == '/') {
-				i++;
-				if_can_solve=1;
-				return;
-			}
-			i++;
-		}
-	}
-
-	/*
-	 * 忽略空白符
-	 */
-	void skip_white_space() {
-		// 忽略空格，Tab和回车
-		while (buffer[i] == ' ' || buffer[i] == '\t' || buffer[i] == '\r') {
-			if (i >= numInFile) {
-				break;
-			}
-			// '/r' 是到行首，'\n'是到下一行
-			if (buffer[i] == '\r') {
-				// 是否是换行,遇到换行调到下一行
-				if (buffer[i+1] == '\n') {
-					i++;
-					if_can_solve=1;
-					if_line_statr=1;
-					return;
-				}
-
-			}
-			i++;
-		}
-		//如果不是行首，那么单词间保留一个空格
-		i--;
-	}
-
-}
-
-```
+### 参见项目目录地址下bit.minisys.minicc.pp 下的 PreProcessor.java
