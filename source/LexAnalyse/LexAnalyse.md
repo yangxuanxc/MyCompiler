@@ -1400,13 +1400,13 @@ char b = 'dddd';
 
 ### 由c语言语法推导出对应的DFA，然后使用状态转换表进行描述。
 ### 如下图，ai（0<=i<=20）,其中a0代表初始状态，其余ai，每个状态对应从初始状态读入一个状态后将要跳转到的状态
-![](source\LexAnalyse\code1.png))
-![](source\LexAnalyse\code2.png))
-![](source\LexAnalyse\code3.png))
+![](/source/LexAnalyse/code1.png)
+![](/source/LexAnalyse/code2.png)
+![](/source/LexAnalyse/code3.png)
 
 ## 4.代码说明
 
 ### 词法分析状态转换图(DFA)
-#### ![](source\LexAnalyse\DFA.png)
-#### [DFA高清pdf文件](/source/LexAnalyse\DFA.pdf)
+#### ![](/source/LexAnalyse/DFA.png)
+#### [DFA高清pdf文件](/source/LexAnalyse/DFA.pdf)
 

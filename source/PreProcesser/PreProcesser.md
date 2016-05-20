@@ -141,7 +141,7 @@ IO:使用字符输出流Reader，Writer 对文件实现读写
 空白，tab，以及回车符。注释分别判断"//" 和"/**/"
 
 程序流程
-![](source\PreProcesser\3.png))
+![](/source/PreProcesser/3.png)
 
 ## 源代码
 
