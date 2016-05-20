@@ -15,9 +15,9 @@ import bit.minisys.minicc.codegen.MiniCCCodeGen;
 import bit.minisys.minicc.icgen.MiniCCICGen;
 import bit.minisys.minicc.optimizer.MiniCCOptimizer;
 import bit.minisys.minicc.scanner.MiniCCScanner;
+import bit.minisys.minicc.scanner.Scanner;
 import bit.minisys.minicc.semantic.MiniCCSemantic;
 import bit.minisys.minicc.parser.MiniCCParser;
-import bit.minisys.minicc.pp.IMiniCCPreProcessor;
 import bit.minisys.minicc.pp.MiniCCPreProcessor;
 import bit.minisys.minicc.pp.PreProcessor;
 //import bit.minisys.minicc.scanner.MiniCCScannerInternal;
@@ -93,7 +93,7 @@ public class MiniCCompiler {
 		
 		// step 1: preprocess
 		String ppOutFile = cFile.replace(MiniCCCfg.MINICC_PP_INPUT_EXT, MiniCCCfg.MINICC_PP_OUTPUT_EXT);
-		IMiniCCPreProcessor prep = new PreProcessor();
+		PreProcessor prep = new PreProcessor();
 		if(pp.skip.equals("false")){
 			if(pp.type.equals("java")){
 				prep.run(cFile, ppOutFile);
@@ -104,7 +104,7 @@ public class MiniCCompiler {
 		
 		// step 2: scan
 		String scOutFile = ppOutFile.replace(MiniCCCfg.MINICC_PP_OUTPUT_EXT, MiniCCCfg.MINICC_SCANNER_OUTPUT_EXT);
-		MiniCCScanner sc = new MiniCCScanner();
+		Scanner sc = new Scanner();
 		if(scanning.skip.equals("false")){
 			if(scanning.type.equals("java")){
 				sc.run(ppOutFile, scOutFile);

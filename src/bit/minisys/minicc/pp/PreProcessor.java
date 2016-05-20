@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.io.Reader;
 import java.io.Writer;
 
-public class PreProcessor implements IMiniCCPreProcessor {
+public class PreProcessor  {
 	File inFile;
 	File outFile;
 	Reader inFileReader;
@@ -24,8 +24,7 @@ public class PreProcessor implements IMiniCCPreProcessor {
 	//行首的空格处理。
 	int if_line_statr = 0;
 	String Out = new String();
-
-	@Override
+	
 	public void run(String iFile, String oFile) {
 		// TODO Auto-generated method stub
 		// 将输入文件用File 类表示
@@ -40,6 +39,7 @@ public class PreProcessor implements IMiniCCPreProcessor {
 			outFileWriter.write(Out);
 			outFileWriter.close();
 			inFileReader.close();
+			System.out.println("1. 预处理完成");
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -78,6 +78,7 @@ public class PreProcessor implements IMiniCCPreProcessor {
 							if (buffer[i] == '\n') {
 								if_can_solve=1;
 								if_line_statr=1;
+								Out+="\r"+"\n";
 							}
 							break;
 						}
@@ -115,6 +116,15 @@ public class PreProcessor implements IMiniCCPreProcessor {
 				if_can_solve=1;
 				return;
 			}
+			if (buffer[i] == '\r') {
+				// 是否是换行,遇到换行调到下一行
+				if (buffer[i+1] == '\n') {
+					i++;
+					if_can_solve=1;
+					if_line_statr=1;
+					Out+="\r"+"\n";
+					}
+				}
 			i++;
 		}
 	}
@@ -135,6 +145,7 @@ public class PreProcessor implements IMiniCCPreProcessor {
 					i++;
 					if_can_solve=1;
 					if_line_statr=1;
+					Out+="\r"+"\n";
 					return;
 				}
 

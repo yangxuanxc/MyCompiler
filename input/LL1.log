@@ -1,56 +1,59 @@
-步骤0	当前分析栈:FUNCTIONS#	余留符号串：intmain(inta,intb){intm;returna+b;}#	语义栈:#
+步骤0	当前分析栈:FUNCTIONS#	余留符号串：intmain(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤1	当前分析栈:FUNCTIONPLUS1#	余留符号串：intmain(inta,intb){intm;returna+b;}#	语义栈:#
+步骤1	当前分析栈:FUNCTIONPLUS1#	余留符号串：intmain(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤2	当前分析栈:TYPEid(ARGS)FUNC_BODYPLUS1#	余留符号串：intmain(inta,intb){intm;returna+b;}#	语义栈:#
+步骤2	当前分析栈:TYPEid(ARGS)FUNC_BODYPLUS1#	余留符号串：intmain(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤3	当前分析栈:intid(ARGS)FUNC_BODYPLUS1#	余留符号串：intmain(inta,intb){intm;returna+b;}#	语义栈:#
+步骤3	当前分析栈:intid(ARGS)FUNC_BODYPLUS1#	余留符号串：intmain(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤4	当前分析栈:id(ARGS)FUNC_BODYPLUS1#	余留符号串：main(inta,intb){intm;returna+b;}#	语义栈:#
+步骤4	当前分析栈:id(ARGS)FUNC_BODYPLUS1#	余留符号串：main(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤5	当前分析栈:(ARGS)FUNC_BODYPLUS1#	余留符号串：(inta,intb){intm;returna+b;}#	语义栈:#
+步骤5	当前分析栈:(ARGS)FUNC_BODYPLUS1#	余留符号串：(inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤6	当前分析栈:ARGS)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm;returna+b;}#	语义栈:#
+步骤6	当前分析栈:ARGS)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤7	当前分析栈:FARGSALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm;returna+b;}#	语义栈:#
+步骤7	当前分析栈:FARGSALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤8	当前分析栈:TYPEidALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm;returna+b;}#	语义栈:#
+步骤8	当前分析栈:TYPEidALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤9	当前分析栈:intidALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm;returna+b;}#	语义栈:#
+步骤9	当前分析栈:intidALIST)FUNC_BODYPLUS1#	余留符号串：inta,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤10	当前分析栈:idALIST)FUNC_BODYPLUS1#	余留符号串：a,intb){intm;returna+b;}#	语义栈:#
+步骤10	当前分析栈:idALIST)FUNC_BODYPLUS1#	余留符号串：a,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤11	当前分析栈:ALIST)FUNC_BODYPLUS1#	余留符号串：,intb){intm;returna+b;}#	语义栈:#
+步骤11	当前分析栈:ALIST)FUNC_BODYPLUS1#	余留符号串：,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤12	当前分析栈:,FARGSALIST)FUNC_BODYPLUS1#	余留符号串：,intb){intm;returna+b;}#	语义栈:#
+步骤12	当前分析栈:,FARGSALIST)FUNC_BODYPLUS1#	余留符号串：,intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤13	当前分析栈:FARGSALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm;returna+b;}#	语义栈:#
+步骤13	当前分析栈:FARGSALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤14	当前分析栈:TYPEidALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm;returna+b;}#	语义栈:#
+步骤14	当前分析栈:TYPEidALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤15	当前分析栈:intidALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm;returna+b;}#	语义栈:#
+步骤15	当前分析栈:intidALIST)FUNC_BODYPLUS1#	余留符号串：intb){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤16	当前分析栈:idALIST)FUNC_BODYPLUS1#	余留符号串：b){intm;returna+b;}#	语义栈:#
+步骤16	当前分析栈:idALIST)FUNC_BODYPLUS1#	余留符号串：b){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤17	当前分析栈:ALIST)FUNC_BODYPLUS1#	余留符号串：){intm;returna+b;}#	语义栈:#
+步骤17	当前分析栈:ALIST)FUNC_BODYPLUS1#	余留符号串：){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤18	当前分析栈:)FUNC_BODYPLUS1#	余留符号串：){intm;returna+b;}#	语义栈:#
+步骤18	当前分析栈:)FUNC_BODYPLUS1#	余留符号串：){intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤19	当前分析栈:FUNC_BODYPLUS1#	余留符号串：{intm;returna+b;}#	语义栈:#
+步骤19	当前分析栈:FUNC_BODYPLUS1#	余留符号串：{intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤20	当前分析栈:{STMTS}PLUS1#	余留符号串：{intm;returna+b;}#	语义栈:#
+步骤20	当前分析栈:{STMTS}PLUS1#	余留符号串：{intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤21	当前分析栈:STMTS}PLUS1#	余留符号串：intm;returna+b;}#	语义栈:#
+步骤21	当前分析栈:STMTS}PLUS1#	余留符号串：intm=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤22	当前分析栈:}PLUS1#	余留符号串：m;returna+b;}#	语义栈:#
+步骤22	当前分析栈:}PLUS1#	余留符号串：m=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤23	当前分析栈:PLUS1#	余留符号串：;returna+b;}#	语义栈:#
+步骤23	当前分析栈:PLUS1#	余留符号串：=5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
-步骤24	当前分析栈:#	余留符号串：returna+b;}#	语义栈:#
+步骤24	当前分析栈:#	余留符号串：5;returna+b;}structjiegou{intstruct_son;}voidtest(intm){charchar1='b';charchar2=''';string_kk="aaaaaaaaa";string_kk1="5555\"\b\n";intint_8=0222;floatfloat_8=05.77;floatfloat_10=-10.22;floatint_16=011af;doublescience_num=11e2;longlong_int=1155L;inta,b,c;c=a+b;c++;c+=b;c=a-b;c-=b;c--c=c*1;c*=a;c=a%b;c=a/b;c=ab;c=a2;c=a&b;structS;S.struct_sonprintf("zhende%d\n",m);returnm;}voidtest_wrong(){stringhaha="xxxxxxx";charb='dddd';}	语义栈:#
 
 步骤25	
 错误信息如下：
 错误序号	错误信息	错误所在行 	错误单词
-1	error		1	int
-2	语法错误		1	m
-3	error		1	;
+1	语法错误		1	main
+2	语法错误		1	a
+3	语法错误		1	b
+4	error		5	int
+5	语法错误		5	m
+6	error		5	=

@@ -6,14 +6,14 @@
         <TYPE>
           <keyword>int</keyword>
         </TYPE>
-        <identifier>main</identifier>
+        <identifier />
         <separator>(</separator>
         <ARGS>
           <FARGS>
             <TYPE>
               <keyword>int</keyword>
             </TYPE>
-            <identifier>a</identifier>
+            <identifier />
           </FARGS>
           <ALIST>
             <separator>,</separator>
@@ -21,7 +21,7 @@
               <TYPE>
                 <keyword>int</keyword>
               </TYPE>
-              <identifier>b</identifier>
+              <identifier />
             </FARGS>
             <ALIST />
           </ALIST>
